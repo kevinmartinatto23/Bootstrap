@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="Css/style.css">
+
+ <!-- Latest compiled and minified CSS -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+ <!-- jQuery library -->
+ <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+ 
+ <!-- Popper JS -->
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+ 
+ <!-- Latest compiled JavaScript -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+ 
+ </head>
+
+<body>
+
+  <div class="container-fluid">
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">
+        <img src="img/logo-azul.jpg" alt="Logo" style="width:40px;">
+      </a>
+    
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Institucional</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Software</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Enfermeria</a>
+          </li>
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Ingreso a las Carreras
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Como llegar</a>
+              <a class="dropdown-item" href="#">Preinscripcion a Software</a>
+              <a class="dropdown-item" href="#">Informacion para ingresantes</a>
+            </div>
+          </li>
+        </ul>
+        <!-- Formulario de Navbar -->
+        <form class="form-inline" action="/action_page.php">
+          <input class="form-control mr-sm-2" type="text" placeholder="busqueda">
+          <button class="btn btn-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </nav> 
+
+
+    <!-- CARRUSEL  -->
+  
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+        <li data-target="#demo" data-slide-to="3"></li>
+      </ul>
+    
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/c1.jpg" alt="Los Angeles">
+        </div>
+        <div class="carousel-item">
+          <img src="img/c2.jpg" alt="Chicago">
+        </div>
+        <div class="carousel-item">
+          <img src="img/c3.jpg" alt="New York">
+        </div>
+        <div class="carousel-item">
+          <img src="img/c4.jpg" alt="New York">
+        </div> 
+      </div>
+    
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    
+    </div>
+    <!-- Boton Separador -->
+    <button type="button" class="btn btn-primary btn-block my-3">CARRERAS</button> 
+    
+    <!-- Cards 1 -->
+    <div class="row">
+      <div class="card col-sm-6" style="width:400px">
+        <img class="card-img-top" src="img/enfermeria.jpg" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">Enfermeria</h4>
+          <p class="card-text">Una carrera de alta demanda </p>
+            <!-- Boton open modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal-Enfermeria">
+              MAS INFO
+            </button>
+        </div>
+      </div>
+      <!-- CARDS 2 -->
+      <div class="card col-sm-6" style="width:400px">
+        <img class="card-img-top" src="img/software.jpg" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">Desarrollo de Software</h4>
+          <p class="card-text"> Un perfil muy demandado </p>
+          <!-- Boton open  modal -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal-Software">
+            MAS INFO
+          </button>
+        </div>
+      </div>
+    </div> 
+
+    <!-- The Modal 1 -->
+    <div class="modal" id="myModal-Software">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Software</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          
+          <!-- Modal body -->
+          
+          <div class="modal-body">
+            Este técnico se ocupa en organizaciones de diversos tipos; empresas que realizan desarrollo de software por encargo de organizaciones locales o extranjeras, que proveen software junto con otros servicios de asesoramiento y consultoría, y, en menor número, que desarrollan sus propios productos de software para vender en el país o en el exterior. También en organizaciones dedicadas a otras actividades, pero que producen el software que necesitan para desarrollar sus propias actividades o que integran en productos que venden.Su posición ocupacional suele denominarse analista programador o programador, aunque últimamente se está generalizando una denominación más abarcativa y menos categorizante, desarrollador de software. Integra equipos de proyecto dedicados al desarrollo o mantenimiento de software y recibe asignaciones específicas que tienen que resolver en lapsos que suelen medirse en términos de días o semanas, produciendo artefactos que satisfagan especificaciones y se integren al sistema objeto del proyecto.
+            Resuelve estas asignaciones individualmente o trabajando en pares, recibiendo la supervisión y asesoramiento de un líder de proyecto o de grupo, con quien consulta dudas y decisiones significativas o comunica inconvenientes. También recibe apoyo y brinda colaboración a otros miembros del grupo. Su trabajo es verificado por un grupo de “testing” y eventuales controles cruzados de código importante. Con una mayor experiencia o especialización en determinadas tecnologías o metodologías, posibles evoluciones ocupacionales del Técnico Superior en Desarrollo de Software son el liderar grupos de trabajo o asumir roles de analista técnico en la materia de su especialidad.
+            Asimismo, puede desempeñarse en forma autónoma, asumiendo la mayor parte de las tareas propias del proceso, sobre todo trabajando en forma independiente resolviendo problemas de pequeñas organizaciones que requieren sistemas de baja complejidad y reducida dimensión. Por otra parte, Técnicos Superiores en Desarrollo de Software o profesionales equivalentes con capacidad emprendedora pueden y suelen asociarse entre ellos para generar sus propias empresas para brindar servicios de desarrollo y proveer software a terceros.
+          </div>
+        
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- The Modal 2 -->
+      <div class="modal" id="myModal-Enfermeria">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Enfermeria</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+              Los conocimientos y habilidades desarrolladas durante su formación le permiten a la/el Enfermera/o el ejercicio profesional en relación de dependencia y en forma libre, desarrollando, brindando y gestionando los cuidados de enfermería autónomos e interdependientes para la promoción, prevención, recuperación y rehabilitación de la persona, la familia, grupo y comunidad hasta el nivel de complejidad de cuidados intermedios, en los ámbitos comunitario y hospitalario en las distintas etapas del ciclo vital; gestionando su ámbito de trabajo y participando en estudios de investigación-acción
+              Este profesional actúa de manera interdisciplinaria con profesionales de diferente nivel de calificación involucrados en su actividad: médicos de distintas especialidades, técnicos y otros profesionales del campo de la salud.
+              Como Enfermera/Enfermero es capaz de interpretar las definiciones estratégicas surgidas de los estamentos profesionales y jerárquicos correspondientes en el marco del equipo de trabajo en el cual participa, posee la capacidad de llevar adelante la gestión de sus actividades específicas y recursos de los cuales es responsable, realizando y controlando la totalidad de las actividades requeridas hasta su efectiva concreción, teniendo en cuenta los criterios de seguridad, impacto ambiental, relaciones humanas, calidad, productividad y costos.
+
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Boton separador -->
+
+    <button type="button" class="btn btn-primary btn-block my-3">INFORMACION</button>
+
+    <div class="row my-3">
+      <!-- Nav pills -->
+      <ul class="nav nav-pills col-sm-6">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="pill" href="#Datos">Datos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="pill" href="#Contacto">Contacto</a>
+        </li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content col-sm-6">
+        <div class="tab-pane container active" id="Datos"> 
+          <h2>INFORMACION</h2>
+          <p><b>Dirección: </b>Defensa 1100 B° Villa El Libertador/</p>
+          <p><b>Horario: </b> 18:00 a 22:30 hs.</p>
+          <p><b>Coordinacción: </b>Ernesto Gallo</p>
+        </div> 
+
+      
+
+        
+        <div class="tab-pane container fade" id="Contacto">
+
+          <H2>Formulario de contacto</H2>
+
+          <form action="/action_page.php">
+            <div class="form-group">
+              <label for="email">Correo Electronico:</label>
+              <input type="email" class="form-control" placeholder="ingresar email" id="email">
+            </div>
+            
+            <div class="form-group">
+              <label for="nombre">Nombre:</label>
+              <input type="text" class="form-control" placeholder="ingresar nombre" id="nombre">
+            </div>
+
+            <div class="form-group">
+              <label for="apellido">Apellido:</label>
+              <input type="text" class="form-control" placeholder="ingresar Apellido" id="apellido">
+            </div>
+        
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form> 
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+      
+</body>
+</html>
